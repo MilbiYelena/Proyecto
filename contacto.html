@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shofar</title>
+  <script src="https://kit.fontawesome.com/b6f997434e.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="shofarr.ico">
+  <link rel="stylesheet" href="estilos.css"/>
+  
+</head>
+<body>
+
+  <header>
+       <h1>SHOFAR AMOBLAMIENTOS</h1>
+   </header>
+
+  
+  <nav class="navigation">
+          <ul>
+            <li> <a href="index.html">INICIO</a></li>
+            <li> <a  href="hacemos.html">NUESTROS SERVICIOS</a></li> 
+            <li> <a  href="portfolio.html">PORTFOLIO</a></li>
+            <li class="active"> <a  href="contacto.html">CONTACTO</a></li>
+          </ul>
+ </nav>
+
+
+<div class="main-and-sidebar-wrapper">
+
+      <div class = "contactoH1">
+        <h2>Dejanos tu consulta y responderemos a la brevedad</h2>
+      </div>  
+    <form class="form" id="form_contacto" action="javascript:enviarCorreo();"   method="POST" >
+
+        <table>
+        <tr>
+          <td><label>Nombre</label></td>
+          <td><input id="nombre" type="text" name="nombre" required=""></td>
+        </tr> 
+          
+        <tr>
+          <td> <label>Email</label></td>
+          <td> <input id="email" type="email" name="email" required=""> </td>
+        </tr> 
+
+        <tr>
+          <td><label>Asunto</label></td>
+          <td><input id="asunto" type="text" name="asunto" required=""></td>
+        </tr> 
+
+        <tr>
+          <td><label>Mensaje</label></td>
+          <td><textarea id="mensaje" name="mensaje" rows="7" cols="30" required=""></textarea></td>
+        </tr> 
+
+        <tr align="center">
+          <td colspan="2""><button type="submit">Enviar</button> 
+          <button type="reset">Reset</button> </td>
+        </tr>
+       
+        </tr></table> 
+		
+      <br><br>
+    </form>
+
+    <div  id ="mapa"> </div>
+    <script  src ="main.js" >
+    </script>
+    <script  src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMIKhkJdpx71x8etq21i6mHK3_AC6O41w&libraries=places&callback=iniciarMap"> 
+    </script>
+
+    <div class = "contactoH2">
+      <p> O llamanos de Lunes- Viernes 08.30 a 18.00 - Sábados 09.00 a 13.00<br>
+            a nuestro telefono: +54 2996 078140</p>
+    </div>    
+    		 
+	<div class="clearfix"></div>
+
+  </div>
+  
+        
+     <footer>
+	<h4>Copyright - Todos los derechos reservados</h4>
+	<p>Seguinos en nuestras <b>redes</b></p>
+	<a  class="fa-brands fa-facebook"  href="https://facebook.com>"></a> 
+  <a  class="fa-brands fa-twitter"  href="https://twitter.com/>"></a>
+  </footer>  
+  
+  </div>
+</body>
+</html>
